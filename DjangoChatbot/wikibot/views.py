@@ -42,7 +42,7 @@ graph = graph_builder.compile(checkpointer=checkpointer)
 config = {'configurable': {'thread_id': uuid.uuid4()}}
 
 def homepage_view(request):
-    return render(request, 'wikibot/homepage.html')
+    return render(request, 'wikibot/chat-homepage.html')
 
 def send_query(request):
     if request.method == 'POST':

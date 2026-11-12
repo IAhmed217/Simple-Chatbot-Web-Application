@@ -18,7 +18,7 @@ from langgraph.graph.message import add_messages
 import os
 from dotenv import load_dotenv
 
-load_dotenv()
+load_dotenv(override=True)
 
 llm = init_chat_model('command-a-03-2025')
 
